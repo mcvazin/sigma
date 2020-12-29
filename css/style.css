@@ -277,15 +277,14 @@ body {
     color: #333333;
 }
 
-.sigma-catalog-open.openned-catalog {
-  color: #00B3EB;
-}
+
 
 .user-block .sigma-collapse-title {
     font-size: 18px;
     line-height: 18px;
     color: #000000;
 }
+
 
 .user-block .sigma-collapse-title.collapsed {
   margin-bottom: 0;
@@ -296,6 +295,10 @@ body {
     line-height: 18px;
     color: #000000;
     padding-left: 0;
+}
+
+.sigma-catalog-open.openned-catalog {
+  color: #00B3EB!important;
 }
 
 .user-block .sigma-collapse-title .sigma-collapse-union {

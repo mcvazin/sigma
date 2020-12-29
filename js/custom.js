@@ -92,4 +92,8 @@ $(document).ready(function () {
     $(event.relatedTarget).addClass('openned-catalog');
   })
 
+  $('.sigma-modal').on('hide.bs.modal', function (event) {
+    $('.openned-catalog').removeClass('openned-catalog');
+  })
+
 }); /*jQuery*/
