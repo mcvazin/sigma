@@ -25,11 +25,11 @@ body {
 }
 
 .pc-close-aside {
-    width: 20px;
-    position: absolute;
-    right: 20px;
-    top: 10px;
-    cursor: pointer;
+  width: 20px;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  cursor: pointer;
 }
 
 .sigma-main-content .sigma-right-aside {
@@ -91,12 +91,12 @@ body {
 }
 
 .sigma-collapse-title.collapsed .sigma-collapse-union {
--webkit-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   transition: 0.5s;
 }
 
- .sigma-collapse-union {
+.sigma-collapse-union {
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   transition: 0.5s;
@@ -227,8 +227,8 @@ body {
 
 .blog-image:after {
   content: "";
-  background: rgba(11, 20, 35, 0.48) url(../img/ico/play_circle_filled.svg) no-repeat
-  center;
+  background: rgba(11, 20, 35, 0.48) url(../img/ico/play_circle_filled.svg)
+    no-repeat center;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -236,97 +236,93 @@ body {
   left: 0;
 }
 
-
 .user-profile {
-    text-align: center;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #E0E0E0;
+  text-align: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .user-profile .user-photo {
-    border-radius: 50%;
-    margin-top: 50px;
-    margin-bottom: 15px;
+  border-radius: 50%;
+  margin-top: 50px;
+  margin-bottom: 15px;
 }
 
 .user-profile a {
-    display: block;
-    font-size: 14px;
-    line-height: 20px;
-    color: #333333;
-    margin-bottom: 1em;
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+  margin-bottom: 1em;
 }
 
 .user-profile .user-pip {
-    font-size: 16px;
-    line-height: 18px;
-    color: #000000;
-    margin-bottom: 1.5em;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+  margin-bottom: 1.5em;
 }
 
 .user-block {
-    border-bottom: 1px solid #E0E0E0;
-    padding: 25px 0;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 25px 0;
 }
 
 .user-block a {
-    display: block;
-    padding-left: 25px;
-    font-size: 14px;
-    line-height: 2.5em;
-    color: #333333;
+  display: block;
+  padding-left: 25px;
+  font-size: 14px;
+  line-height: 2.5em;
+  color: #333333;
 }
-
-
 
 .user-block .sigma-collapse-title {
-    font-size: 18px;
-    line-height: 18px;
-    color: #000000;
+  font-size: 18px;
+  line-height: 18px;
+  color: #000000;
 }
-
 
 .user-block .sigma-collapse-title.collapsed {
   margin-bottom: 0;
 }
 
 .user-block.block-no-collapse a {
-    font-size: 18px;
-    line-height: 18px;
-    color: #000000;
-    padding-left: 0;
+  font-size: 18px;
+  line-height: 18px;
+  color: #000000;
+  padding-left: 0;
 }
 
 .sigma-catalog-open.openned-catalog {
-  color: #00B3EB!important;
+  color: #00b3eb !important;
 }
 
 .user-block .sigma-collapse-title .sigma-collapse-union {
-    display: inline-block;
-    float: right;
-    margin-top: 5px;
+  display: inline-block;
+  float: right;
+  margin-top: 5px;
 }
 
 aside.aside-pc-close .pc-close-aside {
-    right: -35px;
-    top: 0;
-    transform: rotate(180deg);
-    background: #fff;
-    padding: 5px;
-    width: 35px;
-    transition: 0.3s all;
+  right: -35px;
+  top: 0;
+  transform: rotate(180deg);
+  background: #fff;
+  padding: 5px;
+  width: 35px;
+  transition: 0.3s all;
 }
 
 .sigma-main-content aside.aside-pc-close {
-    left: -330px;
-    margin-right: 0;
-    position: absolute;
-    transition: 0.3s all;
+  left: -330px;
+  margin-right: 0;
+  position: absolute;
+  transition: 0.3s all;
 }
 
 .sigma-main-content main.main-pc-full-width {
-    width: calc(100% - 120px);
-    transition: 0.5s all;
+  width: calc(100% - 120px);
+  transition: 0.5s all;
 }
 
 .sigma-modal .modal-body {
@@ -339,12 +335,11 @@ aside.aside-pc-close .pc-close-aside {
 }
 
 .sigma-modal .modal-content {
-    max-width: max-content;
-    background: transparent;
-    border: none;
-    border-radius: 0;
+  max-width: max-content;
+  background: transparent;
+  border: none;
+  border-radius: 0;
 }
-
 
 .sigma-modal .modal-body .cat-link {
   width: 300px;
@@ -356,19 +351,18 @@ aside.aside-pc-close .pc-close-aside {
   box-shadow: none;
   border-bottom: 25px solid rgba(11, 20, 35, 0.48);
   border-right: 25px solid rgba(11, 20, 35, 0.48);
-
-  }
-
-  .sigma-modal .modal-body  .cat-link.firstRow {
-    border-top: 25px solid rgba(11, 20, 35, 0.48);
 }
 
-  .sigma-modal .modal-body .cat-link a {
-    display: flex;
-    height: 100%;
-    background: #fff;
-    flex-direction: column;
-    justify-content: space-around;
+.sigma-modal .modal-body .cat-link.firstRow {
+  border-top: 25px solid rgba(11, 20, 35, 0.48);
+}
+
+.sigma-modal .modal-body .cat-link a {
+  display: flex;
+  height: 100%;
+  background: #fff;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .sigma-modal.modal {
@@ -390,7 +384,7 @@ aside.aside-pc-close .pc-close-aside {
 }
 
 .modal-backdrop.show {
-  opacity: 0!important;
+  opacity: 0 !important;
   pointer-events: none;
 }
 
@@ -398,43 +392,63 @@ aside.aside-pc-close .pc-close-aside {
   margin: 0 auto;
 }
 
-.sigma-modal .modal-body .cat-link .cat-title:before {content: '';height: 1px;width: 75px;background: #E0E0E0;position: absolute;left: calc(50% - 34px);top: -20px;}
+.sigma-modal .modal-body .cat-link .cat-title:before {
+  content: "";
+  height: 1px;
+  width: 75px;
+  background: #e0e0e0;
+  position: absolute;
+  left: calc(50% - 34px);
+  top: -20px;
+}
 
 .sigma-modal .modal-body .cat-link a:hover .cat-title:before {
-  background: #00B3EB;}
+  background: #00b3eb;
+}
 
-
-  /*MEDIA*/
-  @media only screen and (max-width: 1024.5px) {
-
-
+/*MEDIA*/
+@media only screen and (max-width: 1024.5px) {
   .sigma-top-slider .slick-dots {
     bottom: 5px;
+  }
 }
+
+@media only screen and (max-width: 768.5px) {
+  .sigma-top-slider,
+  .sigma-right-aside {
+    display: none;
   }
 
-  @media only screen and (max-width: 768.5px) {
-    .sigma-top-slider,
-.sigma-right-aside{ 
-    display: none;
-}
-
-.sigma-main-content main {
+  .sigma-main-content main {
     width: calc(100% - 320px - 20px);
     margin: 15px 10px;
-}
-
-.sigma-main-content main.main-pc-full-width {
-    width: calc(100% - 15px);
-}
-
-.sigma-main-content aside {
-  width: 320px;
-  padding: 0 25px;
-}
-
-.sigma-modal.modal {
-  margin: 0;
-  max-width: 100%;
-}
   }
+
+  .sigma-main-content main.main-pc-full-width {
+    width: calc(100% - 15px);
+  }
+
+  .sigma-main-content aside {
+    width: 320px;
+    padding: 0 25px;
+  }
+
+  .sigma-modal.modal {
+    margin: 0;
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600.5px) {
+  .sigma-main-content aside {
+    width: 100%;
+  }
+
+  .sigma-main-content main {
+    display: none;
+  }
+
+  .pc-close-aside {
+    display: none;
+  }
+}
