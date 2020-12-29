@@ -406,17 +406,35 @@ aside.aside-pc-close .pc-close-aside {
 
   /*MEDIA*/
   @media only screen and (max-width: 1024.5px) {
-    .sigma-right-aside,
-    .sigma-main-content aside {
-      display: none;
-  }
-  
-  .sigma-main-content main {
-      width: 100%;
-      margin: 0;
-  }
+
 
   .sigma-top-slider .slick-dots {
     bottom: 5px;
+}
+  }
+
+  @media only screen and (max-width: 768.5px) {
+    .sigma-top-slider,
+.sigma-right-aside{ 
+    display: none;
+}
+
+.sigma-main-content main {
+    width: calc(100% - 320px - 20px);
+    margin: 15px 10px;
+}
+
+.sigma-main-content main.main-pc-full-width {
+    width: calc(100% - 15px);
+}
+
+.sigma-main-content aside {
+  width: 320px;
+  padding: 0 25px;
+}
+
+.sigma-modal.modal {
+  margin: 0;
+  max-width: 100%;
 }
   }

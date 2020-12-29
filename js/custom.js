@@ -100,5 +100,13 @@ $(document).ready(function () {
     $('.sigma-modal').modal('hide');
     $('.openned-catalog').removeClass('openned-catalog');
   });
+ 
+  $(".sigma-modal").on("click", function (e) {
+    e.preventDefault();
+    //console.log(e.target);
+    console.log(this.className);
+    //$('.sigma-modal').modal('hide');
+    //$('.openned-catalog').removeClass('openned-catalog');
+  });
 
 }); /*jQuery*/
