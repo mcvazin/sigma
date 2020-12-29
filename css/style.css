@@ -372,8 +372,8 @@ aside.aside-pc-close .pc-close-aside {
 }
 
 .sigma-modal.modal {
-  max-width: calc(100% - 320px);
-  margin-left: 320px;
+  max-width: calc(100% - 345px);
+  margin-left: 345px;
 }
 
 .sigma-modal .modal-dialog {
@@ -391,6 +391,7 @@ aside.aside-pc-close .pc-close-aside {
 
 .modal-backdrop.show {
   opacity: 0!important;
+  pointer-events: none;
 }
 
 .sigma-modal .modal-body .cat-link a img {

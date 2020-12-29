@@ -72,7 +72,7 @@ $(document).ready(function () {
     $("aside").toggleClass("aside-pc-close");
   });
 
-
+  
 
   function highlightFirst(){
     let flexChildren = document.querySelectorAll('.cat-link');
@@ -95,5 +95,10 @@ $(document).ready(function () {
   $('.sigma-modal').on('hide.bs.modal', function (event) {
     $('.openned-catalog').removeClass('openned-catalog');
   })
+
+  $("aside").on("click", function () {
+    $('.sigma-modal').modal('hide');
+    $('.openned-catalog').removeClass('openned-catalog');
+  });
 
 }); /*jQuery*/
