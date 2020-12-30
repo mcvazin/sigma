@@ -1,11 +1,29 @@
 $(document).ready(function () {
-  $(".sigma-top-slider").slick({
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    dots: true,
-  });
+
+  function getTopSliderSettings(){
+    return {
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      dots: true,
+      responsive: [
+        {
+          breakpoint: 2500,
+          settings: {
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            dots: true,
+          },
+        }
+      ],
+    }
+    
+  }
+
+  $(".sigma-top-slider").slick(getTopSliderSettings());
 
   function getSliderSettings(){
     return {
@@ -64,6 +82,12 @@ $(document).ready(function () {
     $('.sigma-blog-slider .slick-slide').remove(); /* Remove current slides elements, in case that you want to show new slides. */
     $('.sigma-blog-slider').slick(getSliderSettings()); /* Initialize the slick again */
     $('.sigma-blog-slider').slick('unslick').slick('reinit');
+   
+    $('.sigma-top-slider').slick('unslick'); /* ONLY remove the classes and handlers added on initialize */
+    $('.sigma-top-slider .slick-slide').remove(); /* Remove current slides elements, in case that you want to show new slides. */
+    $(".sigma-top-slider").slick(getTopSliderSettings());
+    $('.sigma-top-slider').slick('unslick').slick('reinit');
+    
   });
 
   function highlightFirst() {

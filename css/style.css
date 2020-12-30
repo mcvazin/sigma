@@ -311,6 +311,7 @@ aside.aside-pc-close .pc-close-aside {
   padding: 5px;
   width: 35px;
   transition: 0.3s all;
+  z-index: 5;
 }
 
 .sigma-main-content aside.aside-pc-close {
@@ -414,7 +415,6 @@ aside.aside-pc-close .pc-close-aside {
 }
 
 @media only screen and (max-width: 768.5px) {
-  .sigma-top-slider,
   .sigma-right-aside {
     display: none;
   }
