@@ -7,65 +7,63 @@ $(document).ready(function () {
     dots: true,
   });
 
-  $(".sigma-news-slider").slick({
-    infinite: true,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    arrows: true,
-    dots: false,
-    responsive: [
-      {
-        breakpoint: 1600,
-        settings: {
-          slidesToShow: 4,
+  function getSliderSettings(){
+    return {
+      infinite: true,
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      arrows: true,
+      dots: false,
+      responsive: [
+        {
+          breakpoint: 2500,
+          settings: {
+            infinite: true,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            arrows: true,
+            dots: false,
+          },
         },
-      },
-      {
-        breakpoint: 1400,
-        settings: {
-          slidesToShow: 3,
+        {
+          breakpoint: 1600,
+          settings: {
+            slidesToShow: 4,
+          },
         },
-      },
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
+        {
+          breakpoint: 1400,
+          settings: {
+            slidesToShow: 3,
+          },
         },
-      },
-    ],
-  });
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+      ],
+    }
+  }
 
-  $(".sigma-blog-slider").slick({
-    infinite: true,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    arrows: true,
-    dots: false,
-    responsive: [
-      {
-        breakpoint: 1600,
-        settings: {
-          slidesToShow: 4,
-        },
-      },
-      {
-        breakpoint: 1400,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-    ],
-  });
+  $(".sigma-news-slider").slick(getSliderSettings());
+  $(".sigma-blog-slider").slick(getSliderSettings());
+
 
   $(".pc-close-aside").on("click", function () {
     $("main").toggleClass("main-pc-full-width");
     $("aside").toggleClass("aside-pc-close");
+
+    $('.sigma-news-slider').slick('unslick'); /* ONLY remove the classes and handlers added on initialize */
+    $('.sigma-news-slider .slick-slide').remove(); /* Remove current slides elements, in case that you want to show new slides. */
+    $('.sigma-news-slider').slick(getSliderSettings()); /* Initialize the slick again */
+    $('.sigma-news-slider').slick('unslick').slick('reinit');
+   
+    $('.sigma-blog-slider').slick('unslick'); /* ONLY remove the classes and handlers added on initialize */
+    $('.sigma-blog-slider .slick-slide').remove(); /* Remove current slides elements, in case that you want to show new slides. */
+    $('.sigma-blog-slider').slick(getSliderSettings()); /* Initialize the slick again */
+    $('.sigma-blog-slider').slick('unslick').slick('reinit');
   });
 
   function highlightFirst() {
