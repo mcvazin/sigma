@@ -373,6 +373,7 @@ aside.aside-pc-close .pc-close-aside {
 
 .sigma-modal .modal-dialog {
   max-width: 100%;
+      margin: 3px;
 }
 
 .sigma-modal .modal-body .cat-link .cat-title {
